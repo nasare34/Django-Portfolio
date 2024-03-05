@@ -1,0 +1,198 @@
+
+
+{% for course in courses.all %}
+{{course.summary}}
+
+<br>
+{% endfor %}
+
+{% load static %}
+
+
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static '/style.css' %}">
+    <title>Nana Asare Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!--FONT AWESOME CDN-->
+    <script src="https://kit.fontawesome.com/0000000000.js" crossorigin="anonymous"></script>
+
+    <script src="{% static '/script.js' %}"></script>
+</head>
+
+<body>
+
+    <section class="container">
+        <div class="half-width" id="text-box">
+            <h1>Welcome to <span class="purple-color">Nana Asare's </span> World</h1>
+            <h3>Summary</h3>
+            <P>Thorough and meticulous Data Analyst and Web Developer passionate about helping businesses succeed. Founder and CTO at Stusaver.com Possessing strong technical skills rooted in substantial training as Software engineer.</P>
+            <a class="primary-btn" href="https://www.linkedin.com/in/akwasi-asare-1301481b0/">Hire Me~LinkedIn</a>
+        </div>
+
+
+
+        <section class="header">
+            <nav>
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="">HOME</a></li>
+                        <li><a href="">ABOUT</a></li>
+                        <li><a href="">COURSE</a></li>
+                        <li><a href="">BLOG</a></li>
+                        <li><a href="">CONTACT</a></li>
+                    </ul>
+
+                </div>
+            </nav>
+
+
+
+
+
+<!--photos-->
+
+            <div class="half-width">
+                <img class="Side-img" src="{% static 'asare.jpeg' %}" alt="">
+            </div>
+        </section>
+
+        <Section class="container">
+            <div class="half-width" id="text-box">
+                <img class="side-img" src="../static/text.jpeg" alt="">
+            </div>
+            <!--Interests-->
+
+            <div class="half-width">
+                <h2>My Interests</h2>
+                <H4> Software Engineering and Data Science</H4>
+                <p>Coding, Content creation, Fixing or troubleshooting computers, Data Exploration Photo and video editing and Writing</p>
+                <a class="secondary-btn" href="#">Email: nasare34@yahoo.com</a>
+            </div>
+        </Section>
+        <!--Experiences-->
+
+        <section class="experiences">
+            <h2>Experiences</h2>
+            <Div class="experience-item popup__div" id="text-box" data-item="1">
+                <h3>Full Golang Web  Developer</h3>
+                <p class="purple-color">2020-Present | Pro Level Developer</p>
+            </Div>
+
+            <Div class="experience-item popup__div" id="text-box" data-item="2">
+                <h3>Certified Google Data Analyst and IBM data visualization</h3>
+                <p class="purple-color">2021-2022 | Turing (Remote)</p>
+            </Div>
+            <Div class="experience-item popup__div" id="text-box" data-item="3">
+                <h3>Certified IBM Data Scientist</h3>
+                <p class="purple-color">2021-2022 | Turing (Remote)</p>
+            </Div>
+
+
+
+
+        </section>
+        <!--skills-->
+
+
+        <section class="experiences">
+            <h2>My skills</h2>
+            I am a quick learner and specialize in multitude of skills required for Web Application Development and data science and  analytics
+            <Div class="experience-item" id="text-box" data-item="4">
+                <h3>Time Series Forecasting Productionizing Models Recommendation Engines Customer Segmentation</h3>
+                <Div class="experience-item" id="text-box">Golang~beeGo</h3>
+
+                <p>Python (NumPy, Pandas, Scikit-learn, Keras, Flask) SQL (MySQL, Postgres) Git, <br> IBM Cognos, <br> Power BI,<br>  Tablueu,<br>  Excel</p>
+
+
+
+            </Div>
+
+
+            <!--Education-->
+
+
+        </section>
+        <section class="experiences">
+            <h2>Educational Background</h2>
+            <Div class="experience-item" id="text-box" data-item="5">
+                <h3>Ghana Communication Technology University</h3>
+                <p class="purple-color">2020-2024 | BSC. Software Engineering </p>
+
+                <h3>University of the People, USA</h3>
+                <p class="purple-color">2018-2020 | Associate Degree in Health Sciences (Pre-med)</p>
+                <h3>Opoku Ware School (OWASS), Ashanti Region</h3>
+                <p class="purple-color">2015-2018 | General Sciences</p>
+
+            </Div>
+        <section>
+
+        <form action="signup.html" method="post" id="signup">
+	<h1>Feel Free to Contact Me</h1>
+	<div class="field">
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="name" placeholder="Enter your fullname" />
+		<small></small>
+	</div>
+	<div class="field">
+		<label for="email">Email:</label>
+		<input type="text" id="email" name="email" placeholder="Enter your email address" />
+		<small></small>
+	</div>
+
+<div class="field">
+		<label for="email">Index:</label>
+		<input type="text" id="email" name="email" placeholder="Enter your Index Number" />
+		<small></small>
+	</div>
+	<button type="submit">Submit</button>
+</form>
+
+
+        </section>
+
+    <!--FORMS-->
+
+<Section>
+
+
+
+
+
+
+</Section>
+
+
+
+
+
+        <!--Footer-->
+
+
+        <footer>
+
+
+            <p> ⓒ Nana Akwasi Asare 2022, Web Development & Data Science initiatives </p>
+
+        </footer>
+
+<div class="popup">
+                    <button class="popup__toggle">+</button>
+                    <div class="popup__child">
+
+                    </div>
+                </div>
+
+
+
+
+</body>
+
+</html>
